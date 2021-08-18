@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Movies</string>
+
+    <string name="title_activity_main">Movie List</string>
+    <string name="title_activity_second">Insert Movie</string>
+    <string name="title_activity_third">Modify Movie</string>
+    <string name="name">Movie Name</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_desc">Describe your experience</string>
+    <string name="desc">Description</string>
+    <string name="one">Horrible</string>
+    <string name="two">Bad</string>
+    <string name="three">So-so</string>
+    <string name="four">Good</string>
+    <string name="five">Awesome</string>
+
+</resources>

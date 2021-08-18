@@ -71,7 +71,21 @@ public class ThirdActivity extends AppCompatActivity {
 
                 int selectedRB = rg.getCheckedRadioButtonId();
                 RadioButton rb = (RadioButton) findViewById(selectedRB);
-                currentMovie.setStars(Integer.parseInt(rb.getText().toString()));
+                if (rb.getText().toString().equals("Awesome")){
+                    currentMovie.setStars(5);
+                }
+                else if (rb.getText().toString().equals("Good")){
+                    currentMovie.setStars(4);
+                }
+                else if (rb.getText().toString().equals("So-So")){
+                    currentMovie.setStars(3);
+                }
+                else if (rb.getText().toString().equals("Bad")){
+                    currentMovie.setStars(2);
+                }
+                else {
+                    currentMovie.setStars(1);
+                }
 
                 int result = dbh.updateMovie(currentMovie);
                 if (result>0){
